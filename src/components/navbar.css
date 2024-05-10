@@ -129,7 +129,9 @@
       font-size: 1.8rem;
       cursor: pointer;
     }
-  
+  .navbar-ingen{
+    color: #fff;
+  }
     .fa-times {
       color: #fff;
       font-size: 2rem;
