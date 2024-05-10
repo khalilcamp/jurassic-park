@@ -1,3 +1,63 @@
-.sectionTwo{
-    background-image: url('../../public/images/img-home.jpeg');
+:root{
+    margin: 0;
+    padding: 0;
+    background-image: url('../../public/images/jp6.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body{
+    min-height: 100%;
+}
+
+.section-two-p{
+    color:aliceblue;
+    font-size: 120px;
+    margin: 8%;
+    padding: 2%;
+    text-shadow: rgb(39, 39, 39) 1px 0 10px;
+    max-width: 50%;
+}
+
+body,html  {
+  width: 100%;
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.scroll-downs {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  
+  width :34px;
+  height: 55px;
+}
+.mousey {
+  width: 3px;
+  padding: 10px 15px;
+  height: 35px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  box-sizing: content-box;
+}
+p{
+    color: #fff;
+    font-size: 20px;
+}
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #fff;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% { opacity: 0; }
+  10% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(15px); opacity: 0;}
 }
