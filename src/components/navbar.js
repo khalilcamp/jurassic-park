@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Button } from './button';
 import { Link } from 'react-router-dom';
 import './navbar.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -29,11 +31,11 @@ function Navbar() {
       <nav className='navbar'>
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-            TRVL
-            <i class='fab fa-typo3' />
+            NAVBAR RESPONSIVA
+            <i class="fa-solid fa-fire"></i>
           </Link>
           <div className='menu-icon' onClick={handleClick}>
-            <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+            <i className={click ? 'fa-solid fa-circle-xmark' : 'fa-solid fa-bars-staggered'} />
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
