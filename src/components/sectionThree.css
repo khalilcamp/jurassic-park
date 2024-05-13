@@ -3,12 +3,16 @@
 .sectionThree-container{
     background: #393E46;
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-between;
     align-items: center;
+
 
 }
 
-.sectionThree-text h2{
+.sectionThree-text {
+    padding: 60px;
+    max-width: 800px;
+    width: 100%;
     font-size: 32px;
     color:whitesmoke;
     text-shadow: 1px 1px 2px #31363f;
@@ -18,22 +22,19 @@
   }
 
 .slider {
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     background-color: #393E46;
-    width: 400px; /* Ajuste a largura como necessário */
+    width: 100%;
     overflow: hidden; /* Esconde slides que ultrapassam a largura */
 }
 
 .slide-track {
     align-items: center;
     display: flex; /* Alinha slides na horizontal */
-    transform: translateX(-100%); /* Inicia a animação com o último slide fora da tela */
     transition: transform 0s ease-in-out; /* Desativa a transição para reposicionamento inicial */
 }
 
 .slide {
-    flex: 0 0 100px; /* Define a largura de cada slide */
-    margin-right: 80px; /* Espaçamento entre slides */
+    flex: 0 0 300px; /* Define a largura de cada slide */
 }
 
 .slide:last-child {
@@ -41,12 +42,16 @@
 }
 
 .slide-track {
-    animation: slide 6s infinite linear; /* Animação de 4 segundos, repetindo infinitamente */
+    animation: slide 8s infinite linear; /* Animação de 4 segundos, repetindo infinitamente */
 }
 
 @keyframes slide {
-    0% { transform: translateX(0%); } /* Move para a primeira imagem */
-    100% { transform: translateX(-200%); } /* Move para a direita, escondendo a última */
+    0% { transform: translateX(0%); }
+    25% { transform: translateX(-100%); } /* Added keyframe at 25% */
+    50% { transform: translateX(-200%); }
+    75% { transform: translateX(-300%); } /* Added keyframe at 75% */
+    100% { transform: translateX(-400%); } /* Increased translation amount */
+    101% { transform: translateX(-300%); }
 }
 
 /* Estilos adicionais para o fim da animação */

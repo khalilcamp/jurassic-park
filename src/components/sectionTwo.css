@@ -1,5 +1,7 @@
 
-
+.section-two{
+  position: relative;
+}
 .section-two-text-p{
   background-image: url('../../public/images/311aba685a7b220975b8086dea9d2896.jpg');
   background-size: cover;
