@@ -13,7 +13,6 @@ const sectionFour = () => {
                     o Dr. John Parker Hammond "teve" a ideia de clonar dinossauros a partir do 
                     DNA preservado em âmbarfossilizado. John Hammond criou um grupo de pesquisa, incluindo o Dr. Wu, para pôr este sonho em prática.
                     Eles conseguiram clonar um animal pré-histórico em 1984.</p>
-                    <p className='sectionFour-text-paragraph'>Em 1985, após essa conquista, Hammond conseguiu atrair investidores suficientes para fundar uma corporação inteira, a International Genetic Technologies, Inc. (InGen), dedicada à clonagem de vidas extintas. Sua missão era ser a principal empresa de pesquisa do mundo de ciência genética e biológica de ponta e tecnologia.</p>
                 </div>
                 <img className='sectionFour-img'src={ingenBuild} />
             </div>
