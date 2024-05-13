@@ -1,29 +1,22 @@
-:root{
-    margin: 0;
-    padding: 0;
-    background-image: url('../../public/images/jp6.webp');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 
-body{
-    min-height: 100%;
-}
 
+.section-two-text-p{
+  background-image: url('../../public/images/311aba685a7b220975b8086dea9d2896.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 800px;
+
+}
 .section-two-p{
-    color:aliceblue;
+  margin-left: 15%;
+    color:rgb(209, 223, 236);
     font-size: 120px;
-    margin: 8%;
-    padding: 2%;
     text-shadow: rgb(39, 39, 39) 1px 0 10px;
-    max-width: 50%;
+    max-width: 100%;
+    font-family: 'Jurassic Park', sans-serif;
 }
-
 body,html  {
   width: 100%;
-  min-height: 100%;
-  padding: 0;
-  margin: 0;
 }
 
 .scroll-downs {

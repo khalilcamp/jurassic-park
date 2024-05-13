@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import './navbar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import ingenLogo from './assets/images/ingenlogo.png'
+import ingenLogo2 from './assets/images/Ingenicon3.webp'
 
 
 function Navbar() {
@@ -32,7 +33,7 @@ function Navbar() {
       <nav className='navbar'>
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-            <img className="navbar-ingen"src={ingenLogo} width="100" height="80" />
+            <img className="navbar-ingen" src={ingenLogo2} width="100" height="80" />
           </Link>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fa-solid fa-circle-xmark' : 'fa-solid fa-bars-staggered'} />
@@ -49,7 +50,7 @@ function Navbar() {
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                Services
+                Nossa História
               </Link>
             </li>
             <li className='nav-item'>
@@ -58,7 +59,7 @@ function Navbar() {
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                Products
+                Invenções
               </Link>
             </li>
 

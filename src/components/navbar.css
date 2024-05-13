@@ -79,7 +79,11 @@
     .NavbarItems {
       position: relative;
     }
-  
+    .navbar-ingen{
+      width: 100%;
+      max-width: 50px;
+      height: auto;
+    }
     .nav-menu {
       display: flex;
       flex-direction: column;
@@ -117,9 +121,9 @@
       position: absolute;
       top: 0;
       left: 0;
-      transform: translate(25%, 50%);
+      transform: translate(15%, 50%);
     }
-  
+
     .menu-icon {
       display: block;
       position: absolute;

@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Freeman&display=swap');
+
+.sectionThree-container{
+    background: #393E46;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+
+}
+
+.sectionThree-text h2{
+    font-size: 32px;
+    color:whitesmoke;
+    text-shadow: 1px 1px 2px #31363f;
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+.slider {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background-color: #393E46;
+    width: 400px; /* Ajuste a largura como necessário */
+    overflow: hidden; /* Esconde slides que ultrapassam a largura */
+}
+
+.slide-track {
+    align-items: center;
+    display: flex; /* Alinha slides na horizontal */
+    transform: translateX(-100%); /* Inicia a animação com o último slide fora da tela */
+    transition: transform 0s ease-in-out; /* Desativa a transição para reposicionamento inicial */
+}
+
+.slide {
+    flex: 0 0 100px; /* Define a largura de cada slide */
+    margin-right: 80px; /* Espaçamento entre slides */
+}
+
+.slide:last-child {
+    margin-right: 0; /* Remove o espaçamento à direita do último slide */
+}
+
+.slide-track {
+    animation: slide 6s infinite linear; /* Animação de 4 segundos, repetindo infinitamente */
+}
+
+@keyframes slide {
+    0% { transform: translateX(0%); } /* Move para a primeira imagem */
+    100% { transform: translateX(-200%); } /* Move para a direita, escondendo a última */
+}
+
+/* Estilos adicionais para o fim da animação */
+@keyframes slide {
+    100% { transform: translateX(-200%); } /* Move para a direita, escondendo a última */
+    101% { transform: translateX(-100%); } /* Imediatamente volta para o último slide */
+}
