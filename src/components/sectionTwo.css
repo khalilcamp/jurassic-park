@@ -17,9 +17,6 @@
     max-width: 100%;
     font-family: 'Jurassic Park', sans-serif;
 }
-body,html  {
-  width: 100%;
-}
 
 .scroll-downs {
   position: absolute;
@@ -56,3 +53,21 @@ p{
   10% { transform: translateY(0); opacity: 1; }
   100% { transform: translateY(15px); opacity: 0;}
 }
+
+@media screen and (min-width: 300px) and (max-width: 767px) {
+    .section-two-text-p{
+      background-image: url(./assets/images/HD-wallpaper-jurassic-park-animals-movie-rex-world.jpg);
+    }
+    .section-two-p{
+      color: #FFDB5C; 
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    .section-two-text-p{
+      background-image: url(./assets/images/1225600.jpg);
+    }
+    .section-two-p{
+      color: #10439F; 
+    }
+  }

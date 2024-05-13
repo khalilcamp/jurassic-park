@@ -26,8 +26,8 @@ root{
 }
 
 .sectionFour-img{
-    width: 100%;
-    height: 100%;
+    width: 40%;
+    height: 40%;
     border-radius: 25px;
 }
 
@@ -52,7 +52,7 @@ root{
     font-style: normal;
     padding: 3%;
     margin: 2%;
-    font-size: 18px;
+    font-size: 24px;
     color: white;
     
 }
@@ -67,3 +67,17 @@ root{
 	}
 }
 
+@media screen and (min-width: 300px) and (max-width: 1200px) {
+    .sectionFour-container {
+      display: flex;
+      flex-direction: column;
+    }
+    .sectionFour-img{
+        width: 50%;
+        height: 50%;
+        border-radius: 25px;
+    }
+    .sectionFour-text-paragraph{
+        font-size: 24px;
+    }
+  }

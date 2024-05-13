@@ -59,3 +59,10 @@
     100% { transform: translateX(-200%); } /* Move para a direita, escondendo a última */
     101% { transform: translateX(-100%); } /* Imediatamente volta para o último slide */
 }
+
+
+@media screen and (min-width: 300px) and (max-width: 800px) {
+    .sectionThree-container{
+        display: block;
+    }
+  }

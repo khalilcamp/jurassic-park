@@ -134,7 +134,7 @@
       cursor: pointer;
     }
   .navbar-ingen{
-    color: #fff;
+    display: none;
   }
     .fa-times {
       color: #fff;
@@ -165,3 +165,5 @@
         color: #fff;
     }
   }
+
+  
