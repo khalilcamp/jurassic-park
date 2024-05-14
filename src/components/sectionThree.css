@@ -5,6 +5,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-position-y: 15%;
+    background-image: url('./assets/images/painel-banner-para-festa-1-0m-por-0-65cm-jurassic-park-painel-de-festa-infantil.webp');
+    filter: grayscale(50);
 
 
 }
@@ -22,7 +25,6 @@
   }
 
 .slider {
-    background-color: #393E46;
     width: 100%;
     overflow: hidden; /* Esconde slides que ultrapassam a largura */
 }

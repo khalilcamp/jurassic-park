@@ -1,4 +1,6 @@
 .lookbook-gallery {
+    background-image: url('./assets/images/rexy.jpg');
+    filter: grayscale(30%);
     .rexy{
         width: 100%;
         max-width: 1200px;
@@ -10,7 +12,8 @@
         justify-content: center;
         color: #fff;
         background: linear-gradient(114deg, rgba(87,83,98,1) 0%, rgba(40,42,46,1) 100%);
-        border: 0.1px solid rgb(83, 83, 83);
+        background-image: url('./assets/images/Jurassic-World.webp');
+        filter: grayscale(100);
     }
     background-color: #222831;
   .a11y-only {
@@ -33,6 +36,7 @@
     width: auto;
   }
   img {
+    border-radius: 15px;
     width: 100%;
     width: 500px;
     height: 300px;
