@@ -3,6 +3,7 @@ import Navbar from "./components/navbar";
 import SectionTwo from "./components/sectionTwo";
 import SectionThree from "./components/sectionThree";
 import SectionFour from "./components/sectionFour";
+import SectionFive from "./components/sectionFive";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import emailjs from "@emailjs/browser";
@@ -42,6 +43,9 @@ function App() {
         </Routes>
         <Routes>
           <Route exact path="/" element={<SectionFour />} />
+        </Routes>
+        <Routes>
+          <Route exact path="/" element={<SectionFive />} />
         </Routes>
       </Router>
       <form ref={form} onSubmit={sendEmail}>

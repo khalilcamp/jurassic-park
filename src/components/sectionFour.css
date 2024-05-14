@@ -14,10 +14,9 @@ root{
     height: 100%;
     width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .sectionFour-text{
+    padding: 5%;
     position: relative; /* Enables positioning of child elements */
     max-width: 1200px;
     text-shadow: 1px 1px 2px #222831;
@@ -25,46 +24,35 @@ root{
     height: 50%;
 }
 
-.sectionFour-img{
+.sectionFour-text-imgs{
     width: 40%;
     height: 40%;
-    border-radius: 25px;
+    animation: float 3s ease-in-out infinite;
+    
 }
 
-.sectionFour-text-title{
-    font-family: "Barlow", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    margin: 2%;
-    font-size: 64px;
-    color: white;
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
 }
 
 
 .sectionFour-text-paragraph{
-    transform: translateX(-200%);
-	opacity: 0;
-	animation: slide-in-anim 2s ease-out forwards;
-    margin-left: 20%;
     opacity: 0.7; /* Initial transparency */
     font-family: "Barlow", sans-serif;
     font-weight: 600;
     font-style: normal;
-    padding: 3%;
-    margin: 2%;
-    font-size: 24px;
+    font-size: 22px;
     color: white;
     
-}
-
-@keyframes slide-in-anim {
-	20% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 0.7;
-		transform: translateX(0%);
-	}
 }
 
 @media screen and (min-width: 300px) and (max-width: 1200px) {
@@ -81,3 +69,44 @@ root{
         font-size: 24px;
     }
   }
+
+.item-1, 
+.item-2, 
+.item-3{
+display: block;
+  
+
+	animation-duration: 20s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+.item-1{
+	animation-name: anim-1;
+}
+
+.item-2{
+	animation-name: anim-2;
+}
+
+.item-3{
+	animation-name: anim-3;
+}
+
+@keyframes anim-1 {
+	0%, 8.3% { left: -100%; opacity: 0; }
+  8.3%,25% { left: 25%; opacity: 1; }
+  33.33%, 100% { left: 110%; opacity: 0; }
+}
+
+@keyframes anim-2 {
+	0%, 33.33% { left: -100%; opacity: 0; }
+  41.63%, 58.29% { left: 25%; opacity: 1; }
+  66.66%, 100% { left: 110%; opacity: 0; }
+}
+
+@keyframes anim-3 {
+	0%, 66.66% { left: -100%; opacity: 0; }
+  74.96%, 91.62% { left: 25%; opacity: 1; }
+  100% { left: 110%; opacity: 0; }
+}
