@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import { Button } from './button';
-import { Link } from 'react-router-dom';
-import './navbar.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import ingenLogo from './assets/images/ingenlogo.png'
-import ingenLogo2 from './assets/images/Ingenicon3.webp'
-
+import React, { useState, useEffect } from "react";
+import { Button } from "./button";
+import { Link } from "react-router-dom";
+import "./navbar.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import ingenLogo from "./assets/images/ingenlogo.png";
+import ingenLogo2 from "./assets/images/Ingenicon3.webp";
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -26,37 +25,48 @@ function Navbar() {
     showButton();
   }, []);
 
-  window.addEventListener('resize', showButton);
+  window.addEventListener("resize", showButton);
 
   return (
     <>
-      <nav className='navbar'>
-        <div className='navbar-container'>
-          <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-            <img className="navbar-ingen" src={ingenLogo2} width="100" height="80" />
+      <nav className="navbar">
+        <div className="navbar-container">
+          <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+            <img
+              className="navbar-ingen"
+              src={ingenLogo2}
+              width="100"
+              height="80"
+            />
           </Link>
-          <div className='menu-icon' onClick={handleClick}>
-            <i className={click ? 'fa-solid fa-circle-xmark' : 'fa-solid fa-bars-staggered'} />
+          <div className="menu-icon" onClick={handleClick}>
+            <i
+              className={
+                click
+                  ? "fa-solid fa-circle-xmark"
+                  : "fa-solid fa-bars-staggered"
+              }
+            />
           </div>
-          <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-            <li className='nav-item'>
-              <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+          <ul className={click ? "nav-menu active" : "nav-menu"}>
+            <li className="nav-item">
+              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
                 Home
               </Link>
             </li>
-            <li className='nav-item'>
+            <li className="nav-item">
               <Link
-                to='/services'
-                className='nav-links'
+                to="/services"
+                className="nav-links"
                 onClick={closeMobileMenu}
               >
                 Nossa História
               </Link>
             </li>
-            <li className='nav-item'>
+            <li className="nav-item">
               <Link
-                to='/products'
-                className='nav-links'
+                to="/products"
+                className="nav-links"
                 onClick={closeMobileMenu}
               >
                 Invenções
@@ -65,15 +75,15 @@ function Navbar() {
 
             <li>
               <Link
-                to='/sign-up'
-                className='nav-links-mobile'
+                to="/sign-up"
+                className="nav-links-mobile"
                 onClick={closeMobileMenu}
               >
                 Sign Up
               </Link>
             </li>
           </ul>
-          {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
+          {button && <Button buttonStyle="btn--outline">SIGN UP</Button>}
         </div>
       </nav>
     </>
