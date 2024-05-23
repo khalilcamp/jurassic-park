@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+html{
+  background: #151515;
+}
+.form-container {
+display: flex;
+justify-content: center;
+}
+
+.form-text {
+    color: white;
+    font-size: 32px;
+}
+
+.form-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+label{
+  width: 100%;
+}
+
+input{
+  background: #191919;
+  border: 2px solid #FAFAFA;
+  width: 343px;
+  border-radius: 300px;
+}
